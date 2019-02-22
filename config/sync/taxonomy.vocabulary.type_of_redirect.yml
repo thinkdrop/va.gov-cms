@@ -1,0 +1,9 @@
+uuid: a947d353-dbb4-4f69-b8d1-5a27244471a5
+langcode: en
+status: true
+dependencies: {  }
+name: 'Type of Redirect'
+vid: type_of_redirect
+description: null
+hierarchy: 0
+weight: 0

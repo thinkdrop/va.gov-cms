@@ -156,3 +156,5 @@ block_content_permissions: 1.6.0
 hide_revision_field: 2.1.0
 auto_entitylabel: 2.1.0-beta1
 migrate_source_csv: 2.2.0
+va_gov_redirect_options: 0.0.0
+graphql_views: 1.0.0-beta2

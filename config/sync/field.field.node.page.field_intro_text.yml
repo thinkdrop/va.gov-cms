@@ -10,7 +10,7 @@ field_name: field_intro_text
 entity_type: node
 bundle: page
 label: 'Intro text'
-description: "<p>This is displayed directly beneath the title as an introduction to the page. This text should help a user figure out whether the information on this page is relevant to them, and should be written in the 2nd person. It will never be shown alongside the Summary, so it's ok for it to be duplicative of that information.</p>"
+description: '<p>This is displayed directly beneath the title as an introduction to the page. This text should help a user figure out whether the information on this page is relevant to them, and should be written in the 2nd person. It will never be shown alongside the Summary, so it''s ok for it to be duplicative of that information.</p>'
 required: true
 translatable: false
 default_value: {  }

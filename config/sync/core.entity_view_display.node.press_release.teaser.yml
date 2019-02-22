@@ -27,4 +27,10 @@ content:
     settings: {  }
     third_party_settings: {  }
     region: content
-hidden: {  }
+hidden:
+  field_administration: true
+  field_description: true
+  field_media: true
+  field_meta_tags: true
+  field_press_release_contact: true
+  field_release_date: true

@@ -1,0 +1,66 @@
+<?php
+
+/**
+ * @file
+ * Creates custom vocab and schema.
+ */
+
+use Drupal\taxonomy\Entity\Term;
+use Drupal\taxonomy\Entity\Vocabulary;
+
+/**
+ * Add some terms to the Category vocabulary.
+ */
+function va_gov_redirect_options_install() {
+  // Create a vocabulary.
+  $vocabulary = Vocabulary::create([
+    'name' => 'Type of Redirect',
+    'vid' => 'type_of_redirect',
+  ]);
+  $vocabulary->save();
+
+  // Term names to be added.
+  $items = [
+    'Template',
+    'Server',
+  ];
+  foreach ($items as $item) {
+    $term = Term::create([
+      'parent' => [],
+      'name' => $item,
+      'vid' => 'type_of_redirect',
+    ])->save();
+  }
+}
+
+/**
+ * Implements hook_schema().
+ *
+ * Defines the database tables used by this module.
+ *
+ * @see hook_schema()
+ */
+function va_gov_redirect_options_schema() {
+  $schema['redirect_options'] = [
+    'description' => 'Stores redirect type info.\Google\Auth\Tests\ADCGetCredentialsAppEngineTest',
+    'fields' => [
+      'source' => [
+        'type' => 'varchar',
+        'length' => 255,
+        'not null' => TRUE,
+        'default' => '',
+        'description' => 'The source path.',
+      ],
+      'type' => [
+        'type' => 'varchar',
+        'length' => 255,
+        'not null' => TRUE,
+        'default' => '',
+        'description' => 'The type of redirect.',
+      ],
+    ],
+    'primary key' => ['source'],
+  ];
+
+  return $schema;
+}

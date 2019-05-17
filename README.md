@@ -1,8 +1,8 @@
 # cms.VA.gov
 
-## About
+## About this Repository
 
-This is the Content Management System and API for VA.gov.
+This is the source code for the Content Management System and API for VA.gov.
 
 It is an Aquia Lightning based implementation of Drupal 8.
 
